@@ -1,0 +1,14 @@
+name: Node setup
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+  node:
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node
+      - run: npm run test
+      - uses: davelosert/vitest-coverage-report-action@v1
+        with:
+          vite-config-path: vite.config.ts 
