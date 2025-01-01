@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  name: Hello World 
-  runs-on: ubuntu-latest
-  steps:
-    - name: Greet the user 
-      run: echo "Hello world!"
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the user 
+        run: echo "Hello world!"
