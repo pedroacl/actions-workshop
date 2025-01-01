@@ -7,8 +7,9 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
+      - name: Greet the user 
+        run: echo "Hello world!"
       - run: ls -l
       - uses: actions/checkout@v4
       - run: ls -l
-      - name: Greet the user 
-        run: echo "Hello world!"
+
