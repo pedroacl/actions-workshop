@@ -8,6 +8,3 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node
       - run: npm run test
-      - uses: davelosert/vitest-coverage-report-action@v1
-        with:
-          vite-config-path: vite.config.ts 
